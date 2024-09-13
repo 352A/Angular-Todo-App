@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="bg-primary p-5 d-flex flex-column align-items-end">
+    <h1 class="text-light">To Do App</h1>
+    <p class="text-light">Add New To-Do</p>
+    <input
+      type="text"
+      placeholder="Enter New Task"
+      [value]="task"
+      (input)="updateTask($event)"
+      class="w-100 mb-4 p-2 rounded"
+    />
+    <button (click)="addTask()" class="btn btn-outline-light px-5">Add</button>
+  </div>
+</div>

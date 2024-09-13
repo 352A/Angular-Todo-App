@@ -1,0 +1,12 @@
+<div class="container bg-light">
+  <ul>
+    @for (task of tasks; track $index) {
+    <div class="d-flex gap-4 align-items-center p-4 border-bottom">
+      <li>{{ task }}</li>
+      <button class="btn btn-danger" (click)="onDeleteTask($index)">
+        Delete
+      </button>
+    </div>
+    }
+  </ul>
+</div>
